@@ -10,6 +10,6 @@ n = int(input("Введите n: "))
 m = int(input("Введите m: "))
 k = int(input("Введите k: "))
 if k < m * n and (k % n == 0 or k % m == 0):
-    print("да!")
+    print("да, это возможно!")
 else:
     print("нет!")
