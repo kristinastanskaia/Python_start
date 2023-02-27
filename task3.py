@@ -8,6 +8,9 @@ n + nn + nnn = 369
 """
 # Решение_1 через целые числа
 n = int(input('Введите целое положительное число n: '))
+nn = 10 * n + n
+nnn = 100 * n + 10 * n + n
+print(n, nn, nnn)
 # (n + (10 * n + n) + (100 * n + 10 * n + n))  - суммируем n
 print(f"n + nn + nnn = {123 * n}")
 
@@ -18,4 +21,3 @@ nn = int(n + n)
 nnn = int(n + n + n)
 print(f"n + nn + nnn = {int(n) + nn + nnn}")
 """
-
