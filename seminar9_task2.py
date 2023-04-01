@@ -19,3 +19,5 @@ obj_1 = MyClass()
 obj_2 = MyClass()
 
 print(obj_1 is obj_2)
+print(obj_1)
+print(obj_2)
