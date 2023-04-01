@@ -7,3 +7,17 @@
 --- обязательно!!! усложните задачу, "отловив" исключение,
 придумайте как это сделать
 """
+start_list = ['attribute', 'класс', 'функция', 'type']
+list_bytes = []
+
+for i in start_list:
+    try:
+        start_list = bytes(i, encoding='ascii')
+    except UnicodeEncodeError:
+        print(
+            f"Слово '{i}' невозможно записать в байтовом типе"
+            f" с помощью маркировки (b'')")
+    else:
+        list_bytes.append(i)
+print(
+    f'{list_bytes} - эти слова могут быть представлены в байтовом формате')
